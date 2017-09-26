@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption');
+
+body {
+background-image: url(dc-online-media-mockup.jpg);
+background-size: 800px 20624px;
+background-position: top center;
+background-repeat: no-repeat;
+width: 700px;
+margin: auto;
+margin-top: 60px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+font-family: 'PT Sans', sans-serif;
+font-size: 22px;
+line-height: normal;
+}
+
+  h1 {
+  font-size: 45px;
+  font-weight: bold;
+  }
+
+  h2, h3 {
+  font-size: 36px;
+  font-weight: bold;
+  }
+
+  a {
+    color: black
+  }
+
+
+  .grey {
+    color: grey
+  }
