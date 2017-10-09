@@ -2,22 +2,33 @@
 /*@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=cyrillic');*/
 
 body {
-  background-image: url(../images/dc-online-media-mockup.jpg);
+  /*background-image: url(../images/dc-online-media-mockup.jpg);*/
   background-size: 800px 20624px;
   background-position: top center;
   background-repeat: no-repeat;
   width: 700px;
   margin: 0 auto;
   font-family: 'PT Sans', sans-serif;
-  line-height: 28px;
+  line-height: 25px;
   padding-top: 72px;
 }
 
 p {
   font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 
+h1 + p {
+  margin-top: 5px;
+}
+
+h2 + p {
+  margin-top: 10px;
+}
+
+h3 + p {
+  margin-top: 10px;
 }
 
 h1 {
@@ -25,13 +36,12 @@ h1 {
   font-size: 40px;
   font-weight: bold;
   font-family: 'PT Sans Caption', sans-serif;
-
 }
 
 h2 {
   font-size: 33px;
   font-weight: bold;
-
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 h3 {
@@ -39,25 +49,27 @@ h3 {
   font-weight: bold;
   font-family: 'PT Sans Caption', sans-serif;
 }
-/*
-h1 < div {
-    font-size: 25px;
-    line-height: 25px;
-}*/
 
 ul {
   font-size: 24px;
-  line-height: 26px;
+  line-height: 25px;
+  list-style-type: disc;
 }
 
+li {
+  margin-top: 20px;
+}
 a {
-    color: black
+    color: black;
   }
 
-blockquote {
-
-  font-size: 24px;
+.quote {
+  font-size: 20px;
   font-style: italic;
+  font-weight: lighter;
+  margin-top: 10px;
+  border-left: 3px solid black;
+  padding-left: 20px;
 }
 .grey {
     color: grey
