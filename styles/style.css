@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption');
-/*@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=cyrillic');*/
 
 body {
-  /*background-image: url(../images/dc-online-media-mockup.jpg);*/
+  background-image: url(../images/dc-online-media-mockup.jpg);
   background-size: 800px 20624px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -10,44 +9,55 @@ body {
   margin: 0 auto;
   font-family: 'PT Sans', sans-serif;
   line-height: 25px;
-  padding-top: 72px;
+  padding-top: 66px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-p {
-  font-size: 24px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-h1 + p {
-  margin-top: 5px;
-}
-
-h2 + p {
-  margin-top: 10px;
-}
-
-h3 + p {
-  margin-top: 10px;
+h1, h2, h3 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
 }
 
 h1 {
-  margin-bottom: 4px;
   font-size: 40px;
-  font-weight: bold;
+  line-height: 46px;
+}
+
+h1 + p {
   font-family: 'PT Sans Caption', sans-serif;
+  color: rgba(0, 0, 0, .4);
+  font-size: 22px;
+  line-height: 32px;
+}
+
+p, blockquote {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+p + p, blockquote + p {
+  margin-top: 29px;
 }
 
 h2 {
-  font-size: 33px;
-  font-weight: bold;
-  font-family: 'PT Sans Caption', sans-serif;
+  margin-top: 43px;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h2 + p {
+  margin-top: 7px;
 }
 
 h3 {
-  font-size: 25px;
-  font-weight: bold;
-  font-family: 'PT Sans Caption', sans-serif;
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h3 + p {
+  margin-top: 6px;
 }
 
 ul {
@@ -59,18 +69,28 @@ ul {
 li {
   margin-top: 20px;
 }
+
 a {
     color: black;
   }
 
-.quote {
-  font-size: 20px;
+blockquote {
+  position: relative;
+  margin-top: 29px;
   font-style: italic;
-  font-weight: lighter;
-  margin-top: 10px;
-  border-left: 3px solid black;
-  padding-left: 20px;
 }
+
+blockquote::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 3px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8)
+}
+
 .grey {
-    color: grey
+  color: rgba(0, 0, 0, .4);
 }
