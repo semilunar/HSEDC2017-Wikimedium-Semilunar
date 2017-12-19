@@ -1,5 +1,5 @@
 $(function() {
-  $('.sidebar a').each(function() {
+  $('.sidebar a').each(function() { //для каждой ссылки работает такая функция//
     $(this).on('click', function(e) {
       e.preventDefault();
       var scrollTo = $(this).attr('href');

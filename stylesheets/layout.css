@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption');
 
 body {
-  background-size: 800px 20624px;
+  /* background-size: 800px 20624px;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   font-family: 'PT Sans', sans-serif;
   line-height: 25px;
-  padding-top: 66px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -16,18 +19,53 @@ a {
     text-decoration: none;
   }
 
+.menubar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+   align-items: center;
+   height: 50px;
+   padding: 20px;
+}
+
+.logo {
+  display: block;
+  width: 180px;
+  height: 16px;
+  background-size: cover;
+  background-image: url(../images/wikimedium_logo.svg);
+}
+
+.about {
+  font-size: 14px;
+  line-height: 50px;
+  color: rgba(0, 0, 0, .2);
+  -webkit-transition: color .1s ease;
+  transition: color .1s ease;
+}
+
+.about: hover {
+  color: rgba(0, 0, 0, .4)
+}
+
 .sidebar {
   position: fixed;
   top: 46px;
   left: 20px;
   width: 300px;
-  /* opacity: 0.1; */
-  /*transition: opacity .2s ease;*/
+  opacity: 0.1;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
 }
 
-/*.sidebar:hover {
-  opacity: 1;
-}*/
+.sidebar:hover {
+  opacity: 1 ;
+}
 
 .sidebar li {
   margin: 12px 0;
