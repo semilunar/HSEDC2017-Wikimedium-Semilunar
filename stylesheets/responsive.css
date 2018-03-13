@@ -1,18 +1,231 @@
 @media all and (max-width: 1340px) {
   .sidebar {
-    display: none;
+  display: none;
   }
+}
+
+@media all and (max-width: 1080px) {
+  .galleryNav div::before,
+  .galleryNav div::after {
+  background: white;
+}
 }
 
 @media all and (max-width: 1020px) {
-  article img {
+  article > img,
+  article > iframe,
+  .galleryRail img {
+    width: 100%;
+}
+}
+
+@media all and (max-width: 740px) {
+
+  article {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+
+  .gallery {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+
+  }
+
+  .galleryRail figure, .galleryRail img {
     width: 100%;
   }
+
+  .galleryNav div::before, .galleryNav div::after {
+    background: #fff;
+  }
+
+ .postsFeed {
+    padding-top: 60px;
+  }
+
+  .postsFeed  a {
+    width: calc(100vw - 40px);
+    padding: 50px;
+  }
+
+  .postsFeed p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .postsFeed h2 {
+  font-size: 20px;
+}
+
+  .postsFeed figure {
+  width: 100%;
 }
 
 
-@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .sidebar {
-    display: none;
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+
+  .menu {
+    width: 100vw;
+    height: 30px;
   }
+
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 1300px;
+  }
+
+  section {
+    padding-left: -80px;
+    margin-top: 120px;
+    margin-left: -160px;
+    margin-top: 120px;
+    height: 600px;
+
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .left section {
+    margin-left: 80px;
+  }
+
+  .right section {
+    margin-left: 80px;
+  }
+
+  .center section {
+    margin-left: 80px;
+  }
+
+  .mockup {
+    background-size: cover;
+    margin-top: 370px;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 300px);
+    right: 0px;
+
+  }
+
+  .mockup-1 {
+    margin-top: 350px;
+  }
+
+  .mockup-2 {
+    height: 1000px;
+    margin-top: 380px;
+  }
+
+  .mockup-3 {
+    margin-top: 450px;
+  }
+
+  .left figure {
+    margin-left: -30px;
+    margin-top: 60px;
+  }
+
+  .right section figure {
+    margin-left: 300px;
+    margin-top: 40px;
+  }
+
+
+}
+
+
+@media (max-width: 767px) {
+
+  .menu {
+    width: 100vw;
+    height: 30px;
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 750px;
+  }
+
+  p {
+      font-size: 14px;
+      line-height: 24px;
+  }
+
+  h2 {
+      font-size: 23px;
+      line-height: 33px;
+  }
+
+  section {
+    margin-top: 80px;
+    height: 600px;
+  }
+
+  .left section {
+    margin-left: 30px;
+  }
+
+  .right section {
+    margin-left: 30px;
+  }
+
+  .center section {
+    margin-left: 30px;
+  }
+
+  .mockup {
+    margin-top: 230px;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 300px);
+    right: 0px;
+  }
+
+  .mockup-2 {
+    height: 400px;
+    margin-top: 255px;
+    right: -100px;
+  }
+
+  .mockup-3 {
+    margin-top: 280px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 12px;
+  }
+
+  .about {
+    font-size: 10px;
+    line-height: 40px;
+  }
+
+  .left figure {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .right section figure {
+    margin-left: 80px;
+    margin-top: 30px;
+  }
+
+
 }
