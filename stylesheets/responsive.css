@@ -64,13 +64,10 @@
 }
 
 
-
-
-
 @media all and (min-width: 768px) and (max-width: 1023px) {
 
   .menu {
-    width: 100vw;
+    width: 100%;
     height: 30px;
   }
 
@@ -152,7 +149,7 @@
 @media (max-width: 767px) {
 
   .menu {
-    width: 100vw;
+    width: 100%;
     height: 30px;
   }
 
@@ -228,4 +225,30 @@
   }
 
 
+}
+
+
+
+  .galleryRail figure, .galleryRail img{
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .postsFeed a {
+    width: calc(100% - 40px);
+  }
+
+  .postsFeed figure {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .postsFeed h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .postsFeed p {
+    font-size: 16px;
+    line-height: 24px;  }
 }
